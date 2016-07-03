@@ -1,19 +1,15 @@
 # BreathingButton
-----
 This is a react component of a breathing button. It makes use of [MDButton](https://github.com/Madadata/MDButton) and [anime](https://github.com/juliangarnier/anime)
 
 # Demo
-----
 ![demo](https://raw.githubusercontent.com/ZhengHe-MD/BreathingButton/master/demo.gif)
 
 # Install
-----
 ```
 npm install breathingbutton
 ```
 
 # Usage
-----
 ## Properties
 
 * All properties of [MDButton](https://github.com/Madadata/MDButton)
