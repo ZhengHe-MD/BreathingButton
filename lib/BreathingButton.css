@@ -1,0 +1,5 @@
+/* put your css here */
+:local .container {
+  display: inline-block;
+  text-align: center;
+}
