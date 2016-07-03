@@ -6,7 +6,6 @@ const App = () => (
   <div className={styles.container}>
     <div className={styles.button}>
       <BreathingButton
-        targetScale={1.05}
       >
         BreathingButton
       </BreathingButton>

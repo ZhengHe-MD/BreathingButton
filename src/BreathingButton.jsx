@@ -12,10 +12,11 @@ class BreathingButton extends Component {
 
   onMouseEnter() {
     if(!this.breathing) {
+      const { targetScale, period } = this.props;
       this.breathing = anime({
         targets: this.refs.button,
-        scale: [1., this.props.targetScale],
-        duration: 1000,
+        scale: [1., targetScale || 1.05],
+        duration: period || 1000,
         direction: 'alternate',
         easing: 'easeInOutQuad',
         loop: true,
@@ -49,6 +50,7 @@ BreathingButton.propTypes = {
   theme: PropTypes.string,
   href: PropTypes.string,
   targetScale: PropTypes.number,
+  period: PropTypes.number,
 };
 
 export default BreathingButton;
