@@ -31,12 +31,12 @@ class BreathingButton extends Component {
   }
 
   render() {
-    const { text } = this.props;
     return (
       <div ref="button" className={styles.container} >
       <MDButton
         onMouseEnter={this.onMouseEnter}
         onMouseLeave={this.onMouseLeave}
+        {...this.props}
       >
         {this.props.children}
       </MDButton>
@@ -51,6 +51,8 @@ BreathingButton.propTypes = {
   href: PropTypes.string,
   targetScale: PropTypes.number,
   period: PropTypes.number,
+
+  onClick: PropTypes.func,
 };
 
 export default BreathingButton;

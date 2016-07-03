@@ -6,6 +6,7 @@ const App = () => (
   <div className={styles.container}>
     <div className={styles.button}>
       <BreathingButton
+        onClick={() => { console.log('clicked'); }}
       >
         BreathingButton
       </BreathingButton>
